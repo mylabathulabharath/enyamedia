@@ -1,13 +1,29 @@
 import React from 'react'
 import BeforeAfterSlider from './BeforeAfterSlider'
 
-const Products = () => {
-  const products = [
+const Services = () => {
+  const services = [
     {
-      name: 'AI Coloring',
-      category: 'AI / Computer Vision',
+      name: 'Media Restoration',
+      category: 'Restoration Services',
       description:
-        'Transform black and white memories into vibrant, realistic color. AI Coloring brings historical photos and vintage videos to life with intelligent colorization that understands context, lighting, and natural color palettes.',
+        'Restore damaged, degraded, or historical media to pristine condition. Our advanced AI-powered restoration brings old films, photos, and videos back to life, preserving memories for future generations.',
+      highlights: [
+        'Film and video restoration',
+        'Photo restoration and repair',
+        'Damage correction and enhancement',
+        'Historical media preservation',
+      ],
+      hasComparison: false,
+      mediaType: 'image',
+      mediaUrl: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80',
+      gradient: 'from-purple-500/20 via-pink-500/20 to-blue-500/20',
+    },
+    {
+      name: 'Recoloring',
+      category: 'Colorization Services',
+      description:
+        'Transform black and white memories into vibrant, realistic color. Our AI-powered recoloring brings historical photos and vintage videos to life with intelligent colorization that understands context, lighting, and natural color palettes.',
       highlights: [
         'Breathe life into historical content',
         'Realistic color restoration for images and videos',
@@ -21,34 +37,66 @@ const Products = () => {
       afterLabel: 'AI Colored',
       beforeMediaType: 'gif',
       afterMediaType: 'gif',
-      gradient: 'from-purple-500/20 via-pink-500/20 to-blue-500/20',
+      gradient: 'from-blue-500/20 via-cyan-500/20 to-teal-500/20',
     },
     {
-      name: 'AI Movie Making',
-      category: 'AI / Video Generation',
+      name: 'Upscaling',
+      category: 'Enhancement Services',
       description:
-        'Create cinematic videos from text prompts using advanced AI models and workflow orchestration. Powered by ComfyUI and cutting-edge diffusion models for professional-grade video generation with precise control over every frame.',
+        'Enhance resolution and quality of low-resolution media using advanced AI upscaling technology. Transform pixelated images and videos into crisp, high-definition content suitable for modern displays.',
       highlights: [
-        'Text-to-video generation with advanced AI models',
-        'ComfyUI workflow orchestration for complex pipelines',
-        'Frame-by-frame control and consistency',
-        'Professional-grade cinematic output',
+        'AI-powered resolution enhancement',
+        'Multi-frame video upscaling',
+        'Detail preservation and sharpening',
+        'Quality improvement for any media',
       ],
       hasComparison: false,
       mediaType: 'image',
       mediaUrl: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80',
-      gradient: 'from-blue-500/20 via-cyan-500/20 to-teal-500/20',
+      gradient: 'from-teal-500/20 via-green-500/20 to-emerald-500/20',
     },
     {
-      name: 'Charitha',
-      category: 'Media & Streaming',
+      name: 'Character Curation',
+      category: 'Content Services',
       description:
-        'Experience seamless video streaming with intelligent content delivery. Charitha adapts to your connection, device, and preferences to deliver the perfect viewing experience every time.',
+        'Professional character and content curation services for media projects. From character design to content organization, we help bring your creative vision to life with precision and artistry.',
       highlights: [
-        'Adaptive streaming for any connection',
-        'Crystal-clear video quality',
-        'Personalized content recommendations',
-        'Watch anywhere, anytime, on any device',
+        'Character design and development',
+        'Content organization and curation',
+        'Creative direction and guidance',
+        'Professional media production support',
+      ],
+      hasComparison: false,
+      mediaType: 'image',
+      mediaUrl: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80',
+      gradient: 'from-orange-500/20 via-red-500/20 to-pink-500/20',
+    },
+    {
+      name: 'Language Subtitling',
+      category: 'Localization Services',
+      description:
+        'Professional subtitle creation and translation services for films, videos, and media content. Accurate, culturally-aware subtitles that make your content accessible to global audiences.',
+      highlights: [
+        'Multi-language subtitle creation',
+        'Accurate translation and timing',
+        'Cultural adaptation and localization',
+        'Professional formatting and styling',
+      ],
+      hasComparison: false,
+      mediaType: 'image',
+      mediaUrl: 'https://images.unsplash.com/photo-1485846234645-a62644f84728?w=1920&q=80',
+      gradient: 'from-indigo-500/20 via-purple-500/20 to-pink-500/20',
+    },
+    {
+      name: 'Dubbing Services',
+      category: 'Localization Services',
+      description:
+        'High-quality dubbing services for films, videos, and multimedia content. Professional voice talent and seamless audio integration that maintains the original content\'s emotional impact and authenticity.',
+      highlights: [
+        'Professional voice talent',
+        'Multi-language dubbing',
+        'Lip-sync and timing precision',
+        'Cultural and linguistic adaptation',
       ],
       hasComparison: false,
       mediaType: 'gif',
@@ -58,18 +106,18 @@ const Products = () => {
   ]
 
   return (
-    <section id="products" className="section-padding bg-enyamedia-dark">
+    <section id="services" className="section-padding bg-enyamedia-dark">
       <div className="container-custom">
         <div className="text-center mb-20">
           <span className="inline-block text-sm text-enyamedia-primary font-semibold uppercase tracking-widest mb-4 px-4 py-2 bg-enyamedia-primary/10 rounded-full border border-enyamedia-primary/30 backdrop-blur-sm">
-            Products
+            Services
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mt-4 text-white">
-            Our Products
+            Our Services
           </h2>
         </div>
         <div className="space-y-32">
-          {products.map((product, index) => (
+          {services.map((service, index) => (
             <div
               key={index}
               className="relative group animate-slide-up"
@@ -79,16 +127,16 @@ const Products = () => {
                 {/* Content Section */}
                 <div className={index % 2 === 0 ? 'order-2 lg:order-1' : 'order-2 lg:order-2'}>
                   <span className="inline-block text-xs sm:text-sm text-enyamedia-primary font-semibold uppercase tracking-wider mb-4 px-4 py-2 bg-enyamedia-primary/10 rounded-full border border-enyamedia-primary/30">
-                    {product.category}
+                    {service.category}
                   </span>
                   <h3 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-                    {product.name}
+                    {service.name}
                   </h3>
                   <p className="text-lg sm:text-xl text-gray-200 leading-relaxed mb-8">
-                    {product.description}
+                    {service.description}
                   </p>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    {product.highlights.map((highlight, idx) => (
+                    {service.highlights.map((highlight, idx) => (
                       <div
                         key={idx}
                         className="flex items-start p-4 bg-white/5 backdrop-blur-sm rounded-lg border border-white/10 hover:bg-white/10 transition-all duration-300 group/item"
@@ -106,47 +154,47 @@ const Products = () => {
 
                 {/* Visual Section - Before/After Slider or Regular Image */}
                 <div className={index % 2 === 0 ? 'order-1 lg:order-2 relative' : 'order-1 lg:order-1 relative'}>
-                  {product.hasComparison ? (
+                  {service.hasComparison ? (
                     <div className="relative rounded-2xl overflow-hidden glass-card border-2 border-white/10 hover:border-enyamedia-primary/50 transition-all duration-500 shadow-2xl">
                       <div className="aspect-video w-full">
                         <BeforeAfterSlider
-                          beforeImage={product.beforeImage}
-                          afterImage={product.afterImage}
-                          beforeLabel={product.beforeLabel}
-                          afterLabel={product.afterLabel}
-                          beforeMediaType={product.beforeMediaType}
-                          afterMediaType={product.afterMediaType}
+                          beforeImage={service.beforeImage}
+                          afterImage={service.afterImage}
+                          beforeLabel={service.beforeLabel}
+                          afterLabel={service.afterLabel}
+                          beforeMediaType={service.beforeMediaType}
+                          afterMediaType={service.afterMediaType}
                         />
                       </div>
                       {/* Gradient Overlay for Depth */}
                       <div
-                        className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-20 pointer-events-none`}
+                        className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-20 pointer-events-none`}
                       />
                     </div>
                   ) : (
                     <div className="relative rounded-2xl overflow-hidden glass-card border-2 border-white/10 hover:border-enyamedia-primary/50 transition-all duration-500 shadow-2xl group/image">
                       <div className="aspect-video w-full relative overflow-hidden">
-                        {product.mediaType === 'gif' ? (
+                        {service.mediaType === 'gif' ? (
                           <img
-                            src={product.mediaUrl}
-                            alt={product.name}
+                            src={service.mediaUrl}
+                            alt={service.name}
                             className="w-full h-full object-cover transition-transform duration-700 group-hover/image:scale-110"
                             loading="eager"
                             onError={(e) => {
-                              console.error('Failed to load GIF:', product.mediaUrl)
+                              console.error('Failed to load GIF:', service.mediaUrl)
                             }}
                           />
                         ) : (
                           <div
                             className="absolute inset-0 w-full h-full bg-cover bg-center transition-transform duration-700 group-hover/image:scale-110"
                             style={{
-                              backgroundImage: `url('${product.mediaUrl}')`,
+                              backgroundImage: `url('${service.mediaUrl}')`,
                               filter: 'grayscale(20%) brightness(0.7)',
                             }}
                           />
                         )}
                         <div
-                          className={`absolute inset-0 bg-gradient-to-br ${product.gradient} opacity-30`}
+                          className={`absolute inset-0 bg-gradient-to-br ${service.gradient} opacity-30`}
                         />
                       </div>
                     </div>
@@ -164,5 +212,5 @@ const Products = () => {
   )
 }
 
-export default Products
+export default Services
 

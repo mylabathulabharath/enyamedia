@@ -9,7 +9,7 @@ const Footer = () => {
           {/* Left */}
           <div className="text-center md:text-left">
             <p className="text-gray-400 text-sm">
-              © {new Date().getFullYear()} enyaMedia
+              © {new Date().getFullYear()} enyamedia
             </p>
             <p className="text-gray-500 text-xs mt-1">
               India: Cohort – Co Working, Kondapur, Hyderabad, Telangana

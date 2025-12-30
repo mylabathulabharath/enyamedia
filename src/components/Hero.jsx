@@ -69,37 +69,42 @@ const Hero = () => {
           </span>
         </div>
         <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold mb-6 text-white leading-tight flex items-center justify-center gap-2">
-          {/* Logo that slides in from behind */}
-          <div className="relative h-16 sm:h-20 lg:h-24 w-auto overflow-hidden">
+          {/* Logo that slides in from left */}
+          <div className="relative h-16 sm:h-20 lg:h-24 w-auto overflow-visible">
             <img
               src="/enya_logo.png"
-              alt="enyaMedia Logo"
-              className="h-full w-auto object-contain animate-slide-in-logo"
+              alt="enyamedia Logo"
+              className="h-full w-auto object-contain animate-slide-in-from-left"
               style={{
-                animationDelay: '0.5s',
+                animationDelay: '0.0s',
               }}
             />
           </div>
-          {/* "Media" text that stays constant */}
-          <span className="bg-gradient-to-r from-white via-enyamedia-primary to-white bg-clip-text text-transparent">
-            Media
+          {/* "Media" text that slides in from right */}
+          <span 
+            className="bg-gradient-to-r from-white via-enyamedia-primary to-white bg-clip-text text-transparent animate-slide-in-from-right"
+            style={{
+              animationDelay: '0.0s',
+            }}
+          >
+            media
           </span>
         </h1>
         <p className="text-2xl sm:text-3xl lg:text-4xl font-light mb-6 text-gray-100 tracking-tight">
-          Engineering Intelligence.
+        Built for Media. Powered by AI.
           <br />
-          <span className="text-enyamedia-primary">Designing the Future.</span>
+          <span className="text-enyamedia-primary"><b>From First Frame to Final Voice: AI-Powered Media Mastery.</b></span>
         </p>
         <p className="text-base sm:text-lg lg:text-xl text-gray-300 max-w-3xl mx-auto mb-12 leading-relaxed">
-          enyaMedia is a technology studio building AI-powered platforms,
-          intelligent automation systems, and scalable digital products.
+          enyamedia delivers professional media restoration, AI-powered recoloring, upscaling, and localization services.
+          From historical film restoration to multilingual dubbing and subtitling, we preserve and enhance your content for global audiences.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <button
-            onClick={() => scrollToSection('products')}
+            onClick={() => scrollToSection('services')}
             className="group relative px-10 py-4 bg-enyamedia-primary text-enyamedia-dark font-semibold rounded-xl hover:bg-enyamedia-primary/90 transition-all duration-300 transform hover:scale-105 shadow-lg shadow-enyamedia-primary/50 hover:shadow-enyamedia-primary/70"
           >
-            <span className="relative z-10">Explore Our Products</span>
+            <span className="relative z-10">Explore Our Services</span>
             <div className="absolute inset-0 rounded-xl bg-gradient-to-r from-enyamedia-primary to-enyamedia-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </button>
           <button

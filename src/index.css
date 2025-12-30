@@ -54,14 +54,14 @@
   background: rgba(0, 217, 255, 0.5);
 }
 
-/* Logo Slide-in Animation */
-@keyframes slideInLogo {
+/* Logo Slide-in from Left Animation */
+@keyframes slideInFromLeft {
   0% {
-    transform: translateX(-150%) scale(0.8);
+    transform: translateX(-200%) scale(0.8);
     opacity: 0;
   }
   60% {
-    transform: translateX(10%) scale(1.05);
+    transform: translateX(5%) scale(1.05);
     opacity: 1;
   }
   100% {
@@ -70,7 +70,27 @@
   }
 }
 
-.animate-slide-in-logo {
-  animation: slideInLogo 1.5s ease-out forwards;
+/* Media Text Slide-in from Right Animation */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(200%) scale(0.8);
+    opacity: 0;
+  }
+  60% {
+    transform: translateX(-5%) scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-slide-in-from-left {
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.animate-slide-in-from-right {
+  animation: slideInFromRight 1.5s ease-out forwards;
 }
 

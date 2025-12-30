@@ -4,7 +4,7 @@ const WhatWeBuild = () => {
   const systems = [
     {
       title: 'Intelligence Layers',
-      description: 'AI systems that understand and respond in real-time, powering smart features in our products.',
+      description: 'AI systems that understand and respond in real-time, powering smart features in our services.',
       featured: true,
     },
     {
@@ -13,7 +13,7 @@ const WhatWeBuild = () => {
     },
     {
       title: 'Product Infrastructure',
-      description: 'Reliable and scalable systems that keep our products running smoothly for millions of users.',
+      description: 'Reliable and scalable systems that power our media restoration services with precision and efficiency.',
     },
     {
       title: 'Media & Streaming',

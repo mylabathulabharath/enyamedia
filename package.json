@@ -1,7 +1,7 @@
 {
   "name": "enyamedia",
   "version": "1.0.0",
-  "description": "enyaMedia - Futuristic Single-Page Website",
+  "description": "enyamedia - Media Restoration Services Website",
   "private": true,
   "scripts": {
     "dev": "vite",

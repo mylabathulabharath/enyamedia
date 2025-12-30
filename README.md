@@ -1,4 +1,4 @@
-# enyaMedia - Futuristic Single-Page Website
+# enyamedia - Media Restoration Services Website
 
 A modern, futuristic single-page website built with React and Tailwind CSS, featuring a dark theme, smooth animations, and a professional AI-first design.
 
@@ -111,5 +111,5 @@ For mobile, update the background image URL in the same component.
 
 ## License
 
-© 2024 enyaMedia. All rights reserved.
+© 2024 enyamedia. All rights reserved.
 

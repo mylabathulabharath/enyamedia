@@ -1,8 +1,7 @@
 import React from 'react'
 import Hero from './components/Hero'
 import WhatWeBuild from './components/WhatWeBuild'
-import Products from './components/Products'
-import TechnologyStack from './components/TechnologyStack'
+import Services from './components/Services'
 import OurApproach from './components/OurApproach'
 import TalentCulture from './components/TalentCulture'
 import CTA from './components/CTA'
@@ -15,8 +14,7 @@ function App() {
       <Navigation />
       <Hero />
       <WhatWeBuild />
-      <Products />
-      <TechnologyStack />
+      <Services />
       <OurApproach />
       <TalentCulture />
       <CTA />

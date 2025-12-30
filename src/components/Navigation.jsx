@@ -34,7 +34,7 @@ const Navigation = () => {
           >
             <img
               src="/enya_logo.png"
-              alt="enyaMedia Logo"
+              alt="enyamedia Logo"
               className="h-8 w-auto"
             />
             <span className="text-2xl font-bold text-enyamedia-primary">
@@ -49,16 +49,10 @@ const Navigation = () => {
               What We Build
             </button>
             <button
-              onClick={() => scrollToSection('products')}
+              onClick={() => scrollToSection('services')}
               className="text-sm text-gray-300 hover:text-white transition-colors"
             >
-              Products
-            </button>
-            <button
-              onClick={() => scrollToSection('technology')}
-              className="text-sm text-gray-300 hover:text-white transition-colors"
-            >
-              Technology
+              Services
             </button>
             <button
               onClick={() => scrollToSection('cta')}
