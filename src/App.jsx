@@ -13,7 +13,7 @@ function App() {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
-      <WhatWeBuild />
+      {/* <WhatWeBuild /> */}
       <Services />
       <OurApproach />
       <TalentCulture />

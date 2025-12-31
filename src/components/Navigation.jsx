@@ -42,12 +42,12 @@ const Navigation = () => {
             </span>
           </button>
           <div className="hidden md:flex items-center space-x-8">
-            <button
+            {/* <button
               onClick={() => scrollToSection('what-we-build')}
               className="text-sm text-gray-300 hover:text-white transition-colors"
             >
               What We Build
-            </button>
+            </button> */}
             <button
               onClick={() => scrollToSection('services')}
               className="text-sm text-gray-300 hover:text-white transition-colors"
